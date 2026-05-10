@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     rag_corpus_dir: Path = REPO_ROOT / "data" / "rag_docs"
     embed_model: str = "sentence-transformers/all-MiniLM-L6-v2"
     video_max_frames: int = 24
-    preload_segformer: bool = True
+    preload_segformer: bool = False
 
 
 settings = Settings()

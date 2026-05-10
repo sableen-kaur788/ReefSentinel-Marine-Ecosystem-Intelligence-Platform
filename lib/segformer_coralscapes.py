@@ -98,12 +98,15 @@ class SegformerCoralscapesService:
     def load(self) -> None:
         if self._model is not None:
             return
-        self._device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self._device = torch.device("cpu")
         processor, config, _ = _download_processor_and_config(MODEL_ID)
         self._processor = processor
-        self._model = SegformerForSemanticSegmentation.from_pretrained(MODEL_ID, config=config).to(
-            self._device
-        )
+        self._model = SegformerForSemanticSegmentation.from_pretrained(
+            MODEL_ID, 
+            config=config,
+            torch_dtype=torch.float32,
+            low_cpu_mem_usage=True
+        ).to(self._device)
         self._model.eval()
 
     @property
