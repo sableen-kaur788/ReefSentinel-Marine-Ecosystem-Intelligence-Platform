@@ -13,6 +13,9 @@ ReefSentinel is a comprehensive, end-to-end coral reef intelligence system that 
 
 This project includes custom model training, dataset preparation, RAG (Retrieval-Augmented Generation), and a full-stack web application for coral reef monitoring and analysis.
 
+live: https://reefsentinel-frontend-s8dw.onrender.com
+backend:https://sableenkaur27-reefsentinel-backend.hf.space/health
+
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Complete Feature Set](#complete-feature-set)
