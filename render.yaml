@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: reefsentinel-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+    rootDir: .
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+      - key: GROQ_API_KEY
+        fromSecret: groq_api_key
+    autoDeploy: false
+
+  - type: web
+    name: reefsentinel-frontend
+    env: static
+    plan: free
+    buildCommand: cd reefguard && npm install && npm run build
+    staticPublishPath: reefguard/dist
+    rootDir: .
+    autoDeploy: false
+
+  - type: env
+    key: VITE_API_URL
+    fromService:
+      type: web
+      name: reefsentinel-backend
+      property: host
+
+databases: []
