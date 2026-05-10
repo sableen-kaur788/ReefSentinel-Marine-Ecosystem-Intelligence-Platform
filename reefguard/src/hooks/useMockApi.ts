@@ -14,7 +14,7 @@ import {
 import type { Citation } from '../types';
 import type { SegmentationClass } from '../types';
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://sableenkaur27-reefsentinel-backend.hf.space';
 
 const CLASS_FALLBACK_COLORS: Record<string, string> = {
   live_coral: '#AAFFC3',
