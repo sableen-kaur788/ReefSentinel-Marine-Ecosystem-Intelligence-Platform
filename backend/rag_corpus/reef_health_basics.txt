@@ -1,0 +1,7 @@
+Coral reef health assessments combine live coral cover, diversity, structural complexity, and signs of disturbance such as bleaching, disease, or algal overgrowth. Managers often track percent cover of major benthic groups from imagery or point intercept surveys.
+
+Thermal stress can trigger coral bleaching when sea surface temperatures exceed typical summer maxima for prolonged periods. Corals may recover if stress is short; repeated or severe events reduce resilience and can shift reefs toward algal-dominated states.
+
+Algal turf and macroalgae can increase with reduced herbivory, nutrient enrichment, or after coral mortality opens bare substrate. Interpreting high algae in a single image requires context from season, depth, and local land-based inputs.
+
+Hard substrate, rubble, and sand each imply different recruitment potential and stability. Rubble fields may follow storms or blast fishing and can slow coral re-establishment until substrates consolidate.

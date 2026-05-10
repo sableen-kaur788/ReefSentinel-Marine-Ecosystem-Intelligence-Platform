@@ -1,0 +1,5 @@
+Photo-quadrats and structure-from-motion orthomosaics are common for repeating percent cover estimates. Automated semantic segmentation can speed annotation but should be validated against expert labels, especially for rare classes or boundary pixels.
+
+The Coralscapes benchmark targets dense labeling of reef imagery with dozens of fine-grained classes. For communication with stakeholders, fine classes are often merged into live coral, bleached coral, dead coral, algae, and substrate groups.
+
+When comparing model-derived percentages between sites, keep camera altitude, lighting, and water clarity consistent; these strongly affect apparent cover and class confusion.
