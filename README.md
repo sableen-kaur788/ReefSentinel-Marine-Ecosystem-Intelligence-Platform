@@ -1,3 +1,12 @@
+---
+title: ReefSentinel-backend
+emoji: 🐠
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+pinned: false
+---
+
 # ReefSentinel: AI-Powered Coral Reef Intelligence Platform
 
 ReefSentinel is a comprehensive, end-to-end coral reef intelligence system that transforms uploaded reef imagery into detailed segmentation maps, benthic composition metrics, reef health KPIs, ecological reports, interactive trends, and AI-powered chatbot assistance.
